@@ -4,4 +4,50 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    position: relative;
+}
+
+.name {
+    padding: .5rem;
+}
+
+.more {
+    background-color: rgba(256, 256, 256, .5);
+    color: white;
+    padding: .5rem;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+
+.copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(256, 256, 256, .5);
+    padding: .5rem;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+    opacity: 0;
+    transition: opacity .4s;
+    -webkit-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+    -ms-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    cursor: pointer;
+}
+
+.color-box:hover .copy {
+    opacity: 1;
 }

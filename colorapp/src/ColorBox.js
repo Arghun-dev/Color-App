@@ -4,8 +4,9 @@ import './ColorBox.css';
 const ColorBox = ({name, color}) => {
     return (
         <div style={{backgroundColor: `${color}`}} className='color-box'>
-            <span style={{padding: '.5rem'}}>{name}</span>
-            <span style={{padding: '.5rem'}}>More</span>
+            <span className='copy'>Copy</span>
+            <span className='name'>{name}</span>
+            <span className='more'>More</span>
         </div>
     )
 }
