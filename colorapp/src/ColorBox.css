@@ -1,0 +1,7 @@
+.color-box {
+    width: 20%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
