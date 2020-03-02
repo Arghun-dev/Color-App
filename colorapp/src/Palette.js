@@ -35,6 +35,7 @@ class Palette extends React.Component {
                 key={color.id}
                 id={color.id}
                 paletteId={id}
+                showLink
             />
         ))
         return (

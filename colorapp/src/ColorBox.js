@@ -24,7 +24,7 @@ class ColorBox extends React.Component{
     }
     render(){
         const { copied } = this.state;
-        const { color, name, paletteId, id } = this.props;
+        const { color, name, paletteId, id, showLink } = this.props;
         return (
             <CopyToClipboard text={color} onCopy={this.handleCopy}>
                 <div style={{backgroundColor: `${color}`}} className='color-box'>
@@ -35,9 +35,11 @@ class ColorBox extends React.Component{
                 </div>
                     <span className='copy'>Copy</span>
                     <span className='name'>{name}</span>
+                    {showLink && 
                     <Link to={`/palette/${paletteId}/${id}`} onClick={e => e.stopPropagation()} style={{textDecoration: 'none'}}>
                         <span className='more'>More</span>
                     </Link>
+                    }
                 </div>
             </CopyToClipboard>
         )
