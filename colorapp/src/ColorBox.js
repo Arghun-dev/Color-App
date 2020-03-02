@@ -1,6 +1,7 @@
 import React from 'react';
 import './ColorBox.css';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import {Link} from 'react-router-dom';
 
 class ColorBox extends React.Component{
     constructor(props){
@@ -34,7 +35,9 @@ class ColorBox extends React.Component{
                 </div>
                     <span className='copy'>Copy</span>
                     <span className='name'>{name}</span>
-                    <span className='more'>More</span>
+                    <Link to='/' onClick={e => e.stopPropagation()} style={{textDecoration: 'none'}}>
+                        <span className='more'>More</span>
+                    </Link>
                 </div>
             </CopyToClipboard>
         )
