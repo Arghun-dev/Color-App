@@ -6,18 +6,18 @@ import { withStyles } from '@material-ui/styles';
 const styles = {
     root: {
         backgroundColor: 'blue',
-        height: '100%',
+        height: '100vh',
         display: 'flex',
-        alignItems: 'flex-start',
+        alignItems: 'center',
         justifyContent: 'center'
     },
     container: {
-        width: "50%",
+        width: "80%",
+        height: '100%',
         display: 'flex',
-        alignItems: 'flex-start',
+        alignItems: 'center',
         flexDirection: 'column',
         flexWrap: 'wrap',
-        border: '1px solid white',
         color: 'white'
     },
     nav: {
@@ -27,7 +27,8 @@ const styles = {
     },
     palettes: {
         boxSizing: 'border-box',
-        width: '100%',
+        width: '80%',
+        height: '80%',
         display: 'grid',
         gridTemplateColumns: 'repeat(3, 30%)',
         gridGap: '5%'
